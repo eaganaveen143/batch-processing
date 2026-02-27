@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="meta" format="json">
+      <types:shape format="weave" example="examples/MetaData.JSON"><![CDATA[%dw 2.0
+
+type meta = Array<{|  id: Number {"typeId": "int"},   name: String,   email: String,   amount: Number {"typeId": "int"}|}> {"example": "[{\\\"id\\\":1,\\\"name\\\":\\\"Naveen\\\",\\\"email\\\":\\\"naveen@test.com\\\",\\\"amount\\\":5000},{\\\"id\\\":2,\\\"name\\\":\\\"Ravi\\\",\\\"email\\\":\\\"ravi@test.com\\\",\\\"amount\\\":3000},{\\\"id\\\":3,\\\"name\\\":\\\"Anitha\\\",\\\"email\\\":\\\"anitha@test.com\\\",\\\"amount\\\":7000},{\\\"id\\\":4,\\\"name\\\":\\\"Kiran\\\",\\\"email\\\":\\\"kiran@test.com\\\",\\\"amount\\\":2500},{\\\"id\\\":5,\\\"name\\\":\\\"Divya\\\",\\\"email\\\":\\\"divya@test.com\\\",\\\"amount\\\":9000}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+</types:mule>
